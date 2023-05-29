@@ -1,38 +1,139 @@
 .App {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.react-calendar__tile--active {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+
+.appointment-list {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
   text-align: center;
+  margin-right: auto;
+  width: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appointment {
+  background-color: #ffffff;
+  width: 33.33%;
+  box-sizing: border-box;
+  border: 4px solid #4caf50;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 240px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calendar-container {
+  text-align: center;
+  margin-right: 20px;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.add-btn {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  order: 1;
+}
+
+.react-calendar {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.react-calendar__tile {
+  max-height: 50px;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: px;
+}
+
+.has-appointments {
+  background-color: #e41584;
+  border-radius: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.selected-week {
+  background-color: #d7efff;
+  border-radius: 5px;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.different-month {
+  color: #ccc;
+}
+
+.insta {
+  margin-top: 20px;
+  order: 3;
+}
+
+.finish-modal-btn {
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.option-modal {
+  margin-top: 20px;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.info-btn {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  order: 2;
 }
