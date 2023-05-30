@@ -176,11 +176,11 @@ function App() {
         </button>
 
         <button onClick={importAppointments} className="info-btn">
-          Import
+          Uložit
         </button>
 
         <button onClick={exportAppointments} className="info-btn">
-          Export
+          Nahrát
         </button>
 
         <InstagramEmbed
@@ -273,7 +273,7 @@ function App() {
             </div>
           ))
         ) : (
-          <p>Žádne objednavky tento týden</p>
+          <p>Žádne objednavky zvolený týden</p>
         )}
       </div>
     </div>
